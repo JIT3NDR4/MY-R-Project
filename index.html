@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link href="style.css" rel="stylesheet" />
+   <title>My R Presentation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style type="text/css">
+	div {
+    background-image: -webkit-gradient(
+        radial, 
+        50% 50%, 0, 
+        50% 50%, 1000, 
+        from(rgba(245,245,245,1)), 
+        to(rgba(100,100,100,1))
+    );
+}
+
+.mySlides {display:none;}
+</style>
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+<body>
+<!-- coverslides-->
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="cover.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="topic.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="abstract.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="scopeofstudy.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<!-- Graphslides-->
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">Ratio of Cars to Population(Per 1000)</h1> <!-- carsper1000-->
+<iframe style="width: 100%; height: 650px;" src="1.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe></div>
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">State and UT wise Car Sales</h1><!-- statewisesales-->
+<img src="sws.png" alt="HTML5 Icon" style="width:1400px;height:600px;"></div>
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">State and UT wise Car Accidents</h1> <!-- statewiseaccidents-->
+<img src="swa.png" alt="HTML5 Icon" style="width:1400px;height:600px;"></div>
+<div class="mySlides"><h1  style="font-family:verdana;text-align:center;">Factors Influencing Car Purchase</h1><!-- factors influencing car purchase-->
+<img src="factors.png" alt="HTML5 Icon" style="width:1400px;height:600px;"></div></div>
+<div class="mySlides"><h1  style="font-family:verdana;text-align:center;">SegmentWise Car Sales</h1> <!-- segmentwisesales-->
+<center><img src="seg.png" alt="HTML5 Icon" style="width:1400px;height:600px;"></center></div>
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">Car Vs 2Wheeler Sales</h1><!-- car vs 2 wheelers-->
+<iframe style="width: 100%; height: 650px;" src="2.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe></div>
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">Vehicle Preference</h1> <!-- vehiclepref-->
+<center><img src="vp.png" alt="HTML5 Icon" style="width:1400px;height:600px;"></center></div>
+<div class="mySlides"><h1 style="font-family:verdana;text-align:center;">Brand Share In Market(India)</h1> <!-- brandshare-->
+<iframe style="width: 100%; height: 650px;" src="3.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe></div>
+<div class="mySlides"><h1  style="font-family:verdana;text-align:center;">Engine Preference</h1><!-- engine pref-->
+<iframe  style="width: 100%; height: 650px;" src="4.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe></div>
+<div class="mySlides"><h1  style="font-family:verdana;text-align:center;">Automobile Exports and Revenue</h1><!-- exports-->
+<iframe  style="width: 100%; height: 650px;" src="5.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe></div>
+<!-- Graphslides enging-->
+<!-- conclusionslides enging-->
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="analysisoutcomes.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="conclusion.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="futurescope.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe class="mySlides" style="width: 100%; height: 650px;" src="thankyou.html"frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
